@@ -102,3 +102,20 @@ Review and Rating System: This allows users to leave reviews and ratings for pro
 
 Payment Integration: This feature handles the secure processing of payments for bookings. It is vital for enabling financial transactions on the platform, ensuring that hosts receive payments and guests can securely complete their reservations.
 
+API Security
+===============================
+•	Authentication: This involves verifying the identity of users and applications attempting to access the API. Measures like OAuth 2.0 or JWT (JSON Web Tokens) will be implemented to ensure that only legitimate users can access their resources and perform authorized actions, protecting user accounts from unauthorized access.
+
+•	Authorization: Once authenticated, authorization determines what specific resources and actions a user is permitted to access or perform. Role-based access control (RBAC) will be used to ensure that users only have access to the data and functionalities relevant to their role (e.g., a guest cannot modify a host's property listing), thereby preventing unauthorized data manipulation and access to sensitive information.
+
+•	Rate Limiting: This mechanism controls the number of API requests a user or IP address can make within a given timeframe. Implementing rate limiting helps to prevent abuse, brute-force attacks, and denial-of-service (DoS) attacks by slowing down malicious activities and ensuring fair usage of API resources for all users, protecting the stability and availability of the service.
+
+•	Input Validation: All data received from the client will be rigorously validated on the server-side to prevent common vulnerabilities like SQL injection and cross-site scripting (XSS). This is crucial for protecting the database from malicious code injection and safeguarding user data integrity.
+
+•	Data Encryption (In Transit and At Rest): Sensitive data, such as user credentials and payment information, will be encrypted both when transmitted over the network (using HTTPS/SSL/TLS) and when stored in the database. This ensures that even if data is intercepted or a breach occurs, the information remains unreadable and protected.
+
+•	Secure Error Handling: API error messages will be generic and avoid revealing sensitive internal information (e.g., stack traces, database details) that could be exploited by attackers. This prevents information leakage that could aid in reconnaissance for further attacks.
+
+
+
+
