@@ -27,6 +27,65 @@ Technology Stack Overview
 
 •	Docker: A platform for developing, shipping, and running applications in containers. Docker will be used to containerize the application components (e.g., Django backend, PostgreSQL database) to ensure consistent environments across development, testing, and production, simplifying deployment and scaling.
 
+Database Design 
+=========================
+•	Users: Represents individuals who interact with the platform. 
+
+o	id (Primary Key)
+o	username (Unique, for login)
+o	email (Unique, for communication)
+o	password_hash (Securely stored password)
+o	created_at (Timestamp of user creation)
+
+•	Properties: Represents the listings available for booking. 
+
+
+o	id (Primary Key)
+o	host_id (Foreign Key to Users, indicating the property owner)
+o	title (Name of the property)
+o	description (Detailed description of the property)
+o	price_per_night (Cost to book the property for one night)
+o	location (Geographical location of the property)
+
+•	Bookings: Represents a reservation made by a user for a property. 
+
+o	id (Primary Key)
+o	user_id (Foreign Key to Users, indicating the booker)
+o	property_id (Foreign Key to Properties, indicating the booked property)
+o	check_in_date (Start date of the booking)
+o	check_out_date (End date of the booking)
+o	total_price (Calculated total cost of the booking)
+
+•	Reviews: Represents feedback provided by users on properties or hosts. 
+
+o	id (Primary Key)
+o	booking_id (Foreign Key to Bookings, linking the review to a specific stay)
+o	reviewer_id (Foreign Key to Users, indicating who wrote the review)
+o	rating (Numerical rating, e.g., 1-5 stars)
+o	comment (Textual feedback)
+
+•	Payments: Represents payment transactions related to bookings. 
+
+o	id (Primary Key)
+o	booking_id (Foreign Key to Bookings, linking the payment to a specific booking)
+o	amount (Amount paid)
+o	currency (Currency of the payment)
+o	status (e.g., 'pending', 'completed', 'failed')
+o	transaction_id (Reference from payment gateway)
+
+Relationships:
+
+•	A User can have multiple Properties (one-to-many: Users to Properties).
+•	A User can make multiple Bookings (one-to-many: Users to Bookings).
+•	A Property can have multiple Bookings (one-to-many: Properties to Bookings).
+•	A Booking belongs to one User and one Property (many-to-one: Bookings to Users and Bookings to Properties).
+•	A Booking can have one Review (one-to-one: Bookings to Reviews).
+•	A Booking can have one Payment (one-to-one: Bookings to Payments).
+•	A Review is associated with a specific Booking and a User who wrote it.
+
+
+
+
 
  Feature Breakdown
 =========================
