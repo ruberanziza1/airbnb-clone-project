@@ -1,5 +1,16 @@
 # airbnb-clone-project
 README.md
+Team Roles
+=================
+-Project Manager: Responsible for overseeing the entire project lifecycle, managing timelines, resources, and communication with stakeholders. They ensure the project stays on track and meets its objectives.
+-Backend Developer: Designs, develops, and maintains the server-side logic, databases, and APIs. Their responsibilities include implementing business logic, handling data storage, and ensuring efficient communication between the frontend and backend.
+-Frontend Developer: Develops and implements the user interface and user experience of the application. They are responsible for translating design mockups into interactive web pages, ensuring responsiveness and a seamless user experience.
+-Database Administrator (DBA): Manages and maintains the project's databases. This includes designing database schemas, ensuring data integrity, performance tuning, backups, and recovery.
+-DevOps Engineer: Focuses on bridging the gap between development and operations. Their responsibilities include setting up and maintaining CI/CD pipelines, automating deployments, managing infrastructure, and monitoring system performance.
+-QA Engineer/Tester: Ensures the quality of the software by designing and executing test cases, identifying bugs, and verifying that the application meets the specified requirements.
+
+
+
 
 Feature Breakdown
 =========================
