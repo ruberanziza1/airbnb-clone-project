@@ -1,5 +1,6 @@
 # airbnb-clone-project
 README.md
+
 Team Roles
 =================
 -Project Manager: Responsible for overseeing the entire project lifecycle, managing timelines, resources, and communication with stakeholders. They ensure the project stays on track and meets its objectives.
