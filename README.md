@@ -116,6 +116,30 @@ API Security
 
 •	Secure Error Handling: API error messages will be generic and avoid revealing sensitive internal information (e.g., stack traces, database details) that could be exploited by attackers. This prevents information leakage that could aid in reconnaissance for further attacks.
 
+CI/CD Pipeline
+=================================
+CI/CD stands for Continuous Integration and Continuous Delivery/Deployment. A CI/CD pipeline is an automated process that helps software development teams integrate code changes frequently, test them automatically, and then deploy them to various environments (development, staging, production) quickly and reliably.
+
+Importance for the Project:
+
+•	Faster Development Cycles: Automating builds and deployments significantly reduces manual effort and time, allowing for more frequent releases of new features and bug fixes.
+
+•	Improved Code Quality: Continuous Integration ensures that code changes are regularly merged and tested, catching integration issues and bugs early in the development cycle.
+
+•	Increased Reliability: Automated testing and consistent deployment processes reduce the risk of human error, leading to more stable and reliable software releases.
+•	Rapid Feedback: Developers receive immediate feedback on their code changes, allowing them to address issues quickly.
+
+Tools that could be used:
+
+•	GitHub Actions: A flexible CI/CD platform integrated directly into GitHub, allowing for automated workflows to be triggered by repository events like pushes or pull requests. It's suitable for building, testing, and deploying the Airbnb Clone.
+
+•	Docker: While also a technology in the stack, Docker plays a crucial role in CI/CD by providing consistent and isolated environments for building, testing, and deploying applications. It ensures that the application runs the same way across all stages of the pipeline.
+
+•	Jest (for Frontend Testing): A JavaScript testing framework commonly used with React for unit and integration testing of frontend components.
+
+•	Pytest (for Backend Testing): A popular Python testing framework for writing simple yet powerful tests for the Django backend.
+
+•	Sentry (for Error Monitoring): A tool for real-time error tracking and monitoring, which can be integrated into the CI/CD pipeline to provide immediate alerts on production issues.
 
 
 
