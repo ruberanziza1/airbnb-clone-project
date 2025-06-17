@@ -15,7 +15,17 @@ Team Roles
 
 -QA Engineer/Tester: Ensures the quality of the software by designing and executing test cases, identifying bugs, and verifying that the application meets the specified requirements.
 
+Technology Stack Overview
+===============================
+•	Django: A high-level Python web framework that encourages rapid development and clean, pragmatic design. In this project, Django will be used for building the robust backend, handling URL routing, ORM for database interaction, and potentially for building RESTful APIs.
 
+•	PostgreSQL: An open-source relational database management system. PostgreSQL will serve as the primary data store for the project, chosen for its reliability, data integrity features, and ability to handle complex queries, making it suitable for storing user data, property listings, bookings, and more.
+
+•	GraphQL: A query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL will be used to create a flexible and efficient API, allowing clients to request exactly the data they need, reducing over-fetching and under-fetching of data.
+
+•	React: A JavaScript library for building user interfaces. React will be used for developing the dynamic and interactive frontend of the Airbnb Clone, enabling component-based development and efficient rendering of UI elements.
+
+•	Docker: A platform for developing, shipping, and running applications in containers. Docker will be used to containerize the application components (e.g., Django backend, PostgreSQL database) to ensure consistent environments across development, testing, and production, simplifying deployment and scaling.
 
 
 Feature Breakdown
