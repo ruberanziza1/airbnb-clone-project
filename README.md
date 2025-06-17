@@ -1,7 +1,7 @@
 # airbnb-clone-project
 README.md
 
-Team Roles
+1. Team Roles
 =================
 -Project Manager: Responsible for overseeing the entire project lifecycle, managing timelines, resources, and communication with stakeholders. They ensure the project stays on track and meets its objectives.
 
@@ -15,7 +15,7 @@ Team Roles
 
 -QA Engineer/Tester: Ensures the quality of the software by designing and executing test cases, identifying bugs, and verifying that the application meets the specified requirements.
 
-Technology Stack Overview
+2. Technology Stack Overview
 ===============================
 •	Django: A high-level Python web framework that encourages rapid development and clean, pragmatic design. In this project, Django will be used for building the robust backend, handling URL routing, ORM for database interaction, and potentially for building RESTful APIs.
 
@@ -28,7 +28,7 @@ Technology Stack Overview
 •	Docker: A platform for developing, shipping, and running applications in containers. Docker will be used to containerize the application components (e.g., Django backend, PostgreSQL database) to ensure consistent environments across development, testing, and production, simplifying deployment and scaling.
 
 
-Feature Breakdown
+ Feature Breakdown
 =========================
 
 User Management: This feature encompasses functionalities for user registration, login, profile management, and potentially password reset. It is crucial for allowing users to create accounts, personalize their experience, and securely access the platform's services.
